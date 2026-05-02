@@ -29,6 +29,7 @@
                         :variant="'default'"
                         :icon="ChevronRight"
                         :class="'!bg-[#C8ABFF] !hover:bg-[#AD93DC]font-semibold !text-[#2B2A2C]'"
+                        @click="handleClickAboutMe"
                     >
                         About Me
                     </Button>
@@ -48,6 +49,12 @@ import SocialButton from './SocialButton.vue';
 
 // Icons
 import { ChevronRight } from '@lucide/vue';
+
+const router = useRouter();
+
+function handleClickAboutMe(): void {
+    router.push('/about');
+}
 </script>
 
 <style scoped>
