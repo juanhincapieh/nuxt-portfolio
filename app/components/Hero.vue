@@ -26,7 +26,7 @@
                     :icon="ChevronRight"
                     :class="'!bg-[#C8ABFF] !hover:bg-[#AD93DC]font-semibold !text-[#2B2A2C]'"
                 >
-                    Contact Me
+                    About Me
                 </Button>
             </div>
         </div>
