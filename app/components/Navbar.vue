@@ -37,7 +37,7 @@
                     :size="'md'"
                     :variant="'default'"    
                     :icon="IdCardLanyard"
-                    @click=""
+                    @click="handleCVDownload"
                 >
                     Download CV
                 </Button>
@@ -60,4 +60,8 @@ import {
 } from '@lucide/vue';
 
 const route = useRoute();
+
+const handleCVDownload = (): void => {
+    window.open("/files/cv.pdf")
+}
 </script>

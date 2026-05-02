@@ -11,7 +11,7 @@
                 :resolution-scale="1"
             />
         </div>
-        <div class="relative flex flex-col max-w-7xl mx-auto w-full px-6 md:px-12 pt-12 z-10">
+        <div class="relative flex flex-col max-w-7xl mx-auto w-full px-6 md:px-12 pt-10 z-10">
             <Navbar />
         </div>
     </div>
