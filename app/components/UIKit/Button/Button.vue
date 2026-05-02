@@ -1,7 +1,7 @@
 <template>
     <button
         :class="[
-            'flex items-center gap-2 justify-center transition-all duration-200 focus:outline-none',
+            'flex items-center gap-2 justify-center transition-all duration-200 focus:outline-none hover:cursor-pointer',
             sizeClass,
             variantClass,
             customClass
@@ -50,7 +50,7 @@ const sizeClass = computed(() => {
         case 'sm':
             return 'py-1 px-3 rounded-lg text-sm'
         case 'md':
-            return 'min-w-[118px] h-12 px-4 py-3 text-base font-medium rounded-lg'
+            return 'min-w-[118px] h-8 px-3 py-5 text-md font-normal rounded-lg whitespace-nowrap'
         case 'lg':
             return 'px-6 py-3 text-base rounded'
         default:
@@ -63,7 +63,7 @@ const variantClass = computed(() => {
         case 'outline':
             return 'border-[0.5px] border-gray-300 bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors'
         default:
-            return 'bg-black text-white hover:bg-gray-700 hover:text-white transition-colors'
+            return 'bg-black text-white hover:bg-gray-900 hover:text-white transition-colors'
     }
 })
 
