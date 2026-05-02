@@ -15,7 +15,7 @@
                     class="flex flex-col items-center text-gray-300/80 hover:text-gray-400"
                     :class="{ 'text-white' : route.path === '/about' }"
                 >
-                    <UserRound :size="30" />
+                    <CircleUserRound :size="30" />
                 </NuxtLink>
                 <NuxtLink 
                     to="/projects" 
@@ -58,6 +58,7 @@ import {
     Mail,
     FileUser,
     Briefcase,
+    CircleUserRound,
 } from '@lucide/vue';
 
 const route = useRoute();
