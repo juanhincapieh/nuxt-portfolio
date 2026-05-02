@@ -1,9 +1,6 @@
 <template>
-    <Transition
-        name="fade-up"
-        appear
-    >
-        <div class="flex flex-row justify-between">
+    <Transition name="fade-up">
+        <div v-if="visible" class="flex flex-row justify-between">
             <div class="flex flex-col gap-1 max-w-130 -mt-6">
                 <span class="text-[150px] font-extrabold text-white">Hi!</span>
                 <span class="text-[55px] font-semibold text-white -mt-14 ml-1">I’m <span class="text-[#C8ABFF]">Juan Hincapie</span></span>
@@ -49,6 +46,10 @@ import SocialButton from './SocialButton.vue';
 
 // Icons
 import { ChevronRight } from '@lucide/vue';
+import { ref, onMounted, nextTick } from 'vue';
+
+const visible = ref(false);
+onMounted(() => nextTick(() => { visible.value = true; }));
 
 const router = useRouter();
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="relative min-h-screen">
+    <div class="relative">
         <div class="relative flex flex-col gap-16 max-w-7xl mx-auto mt-14 w-full z-10">
             <Hero />
         </div>
