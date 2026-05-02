@@ -2,7 +2,7 @@
     <div class="relative min-h-screen">
         <div class="absolute inset-0 z-0 opacity-50">
             <DarkVeil 
-                :hue-shift="40"
+                :hue-shift="0"
                 :noise-intensity="0"
                 :scanline-intensity="0"
                 :speed="0.7"
@@ -11,8 +11,9 @@
                 :resolution-scale="1"
             />
         </div>
-        <div class="relative flex flex-col max-w-7xl mx-auto w-full px-6 md:px-12 pt-10 z-10">
+        <div class="relative flex flex-col  gap-16 max-w-7xl mx-auto w-full px-6 md:px-12 pt-10 z-10">
             <Navbar />
+            <Hero />
         </div>
     </div>
 </template>

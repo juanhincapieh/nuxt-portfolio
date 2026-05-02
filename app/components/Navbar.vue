@@ -1,6 +1,6 @@
 <template>
     <div class="mt-3">
-        <div class="flex items-center align-middle justify-between mx-2 bg-white/10 backdrop-blur-3xl py-3 px-4 rounded-2xl">
+        <div class="flex items-center align-middle justify-between bg-white/10 backdrop-blur-3xl py-3 px-4 rounded-2xl">
             <h1 class="text-white text-xl font-semibold">juanhincapieh</h1>
             <div class="flex align-middle items-center space-x-8">
                 <NuxtLink 
@@ -22,7 +22,7 @@
                     class="flex flex-col items-center text-gray-300/80 hover:text-gray-400"
                     :class="{ 'text-white' : route.path === '/projects' }"
                 >
-                    <FolderRoot :size="30" />
+                    <BriefcaseBusiness :size="30" />
                 </NuxtLink>
                 <NuxtLink 
                     to="/contact" 
@@ -36,10 +36,10 @@
                 <Button
                     :size="'md'"
                     :variant="'default'"    
-                    :icon="IdCardLanyard"
+                    :icon="FileUser"
                     @click="handleCVDownload"
                 >
-                    Download CV
+                    View CV
                 </Button>
             </div>
         </div>
@@ -54,9 +54,10 @@ import Button from '@/components/UIKit/Button/Button.vue';
 import { 
     Home,
     UserRound,
-    FolderRoot,
+    BriefcaseBusiness,
     Mail,
-    IdCardLanyard,
+    FileUser,
+    Briefcase,
 } from '@lucide/vue';
 
 const route = useRoute();

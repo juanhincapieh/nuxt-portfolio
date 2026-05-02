@@ -8,14 +8,14 @@
         ]"
         @click="$emit('click', $event)"
     >
+        <span v-if="$slots.default">
+            <slot />
+        </span>
         <component
             v-if="props.icon && props.icon !== 'none'"
             :is="props.icon"
             :class="iconSizeClass"
         />
-        <span v-if="$slots.default">
-            <slot />
-        </span>
     </button>
 </template>
 
@@ -52,7 +52,7 @@ const sizeClass = computed(() => {
         case 'md':
             return 'min-w-[118px] h-8 px-3 py-5 text-md font-normal rounded-lg whitespace-nowrap'
         case 'lg':
-            return 'px-6 py-3 text-base rounded'
+            return 'px-7 py-4 text-xl rounded-lg'
         default:
             return 'min-w-[118px] h-8 px-3 py-4 text-sm font-normal rounded-lg whitespace-nowrap'
     }
