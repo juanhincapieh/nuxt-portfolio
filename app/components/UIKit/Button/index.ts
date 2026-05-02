@@ -1,0 +1,1 @@
+export { default as Button } from '@/components/UIKit/Button/Button.vue'
