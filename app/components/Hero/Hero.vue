@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="w-130 h-130 rounded-full overflow-hidden shrink-0 border-4 border-white">
-                <img src="/juan.webp" alt="Juan Hincapie" class="w-full h-full object-cover">
+                <img src="/Hero/juan.webp" alt="Juan Hincapie" class="w-full h-full object-cover">
             </div>
         </div>
     </Transition>
