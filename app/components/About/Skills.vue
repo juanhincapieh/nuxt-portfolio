@@ -1,11 +1,11 @@
 <template>
     <Transition name="fade-up">
         <div v-if="visible" class="mb-20 flex flex-col relative gap-4">
-            <span class="text-5xl font-bold text-white">
+            <span class="text-5xl font-extrabold text-white">
                 Skills
             </span>
             <div class="grid grid-cols-2 gap-16">
-                <div>
+                <div class="bg-gray-900/80 backdrop-blur-3xl rounded-2xl p-4 w-full">
                     <span class="text-3xl font-semibold text-white">
                         Frontend
                     </span>
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="bg-gray-900/80 backdrop-blur-3xl rounded-2xl p-4 w-full">
                     <span class="text-3xl font-semibold text-white">
                         Backend
                     </span>
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-16 mt-8">
-                <div>
+                <div class="bg-gray-900/80 backdrop-blur-3xl rounded-2xl p-4 w-full">
                     <span class="text-3xl font-semibold text-white">
                         DevOps & CI/CD
                     </span>
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="bg-gray-900/80 backdrop-blur-3xl rounded-2xl p-4 w-full">
                     <span class="text-3xl font-semibold text-white">
                         Other
                     </span>

@@ -1,9 +1,9 @@
 <template>
     <Transition name="fade-up">
         <div v-if="visible" class="flex flex-row justify-between">
-            <div class="flex flex-col gap-1 max-w-130 -mt-6">
+            <div class="flex flex-col gap-1 max-w-140 -mt-2">
                 <span class="text-[150px] font-extrabold text-white">Hi!</span>
-                <span class="text-[55px] font-semibold text-white -mt-14 ml-1">I’m <span class="text-[#C8ABFF]">Juan Hincapie</span></span>
+                <span class="text-[55px] font-extrabold text-white -mt-14 ml-1">I’m <span class="text-[#C8ABFF]">Juan Hincapie</span></span>
                 <span class="ml-1.5 text-2xl font-normal text-[#959595] mt-4">Full Stack Software Engineer with expertise on creating innovative ideas that impact your products and make them out stand over anything.</span>
                 <div class="flex flex-row mt-12 ml-2 gap-8 items-center align-middle">
                     <div class="flex flex-row gap-4">
