@@ -5,58 +5,54 @@
                 Skills
             </span>
             <div class="grid grid-cols-2 gap-16">
-                <div class="bg-gray-900/80 backdrop-blur-3xl rounded-2xl p-4 w-full">
+                <div class="bg-gray-900/20 backdrop-blur-3xl rounded-2xl p-4 w-full border-[0.5px] border-white/20 shadow-2xl">
                     <span class="text-3xl font-semibold text-white">
                         Frontend
                     </span>
                     <div class="flex flex-row flex-wrap gap-4 mt-4">
-                        <div v-for="frontendSkill in SKILLS.frontend">
-                            <SkillTech
-                                :logo="frontendSkill.logo"
-                                :label="frontendSkill.label"
-                            />
-                        </div>
+                        <SkillTech
+                            v-for="frontendSkill in SKILLS.frontend"
+                            :logo="frontendSkill.logo"
+                            :label="frontendSkill.label"
+                        />
                     </div>
                 </div>
-                <div class="bg-gray-900/80 backdrop-blur-3xl rounded-2xl p-4 w-full">
+                <div class="bg-gray-900/20 backdrop-blur-3xl rounded-2xl p-4 w-full border-[0.5px] border-white/20 shadow-2xl">
                     <span class="text-3xl font-semibold text-white">
                         Backend
                     </span>
                     <div class="flex flex-row flex-wrap gap-4 mt-4">
-                        <div v-for="backendSkill in SKILLS.backend">
-                            <SkillTech
-                                :logo="backendSkill.logo"
-                                :label="backendSkill.label"
-                            />
-                        </div>
+                        <SkillTech
+                            v-for="backendSkill in SKILLS.backend"
+                            :logo="backendSkill.logo"
+                            :label="backendSkill.label"
+                        />
                     </div>
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-16 mt-8">
-                <div class="bg-gray-900/80 backdrop-blur-3xl rounded-2xl p-4 w-full">
+                <div class="bg-gray-900/20 backdrop-blur-3xl rounded-2xl p-4 w-full border-[0.5px] border-white/20 shadow-2xl">
                     <span class="text-3xl font-semibold text-white">
                         DevOps & CI/CD
                     </span>
                     <div class="flex flex-row flex-wrap gap-4 mt-4">
-                        <div v-for="devopsSkill in SKILLS.devops">
-                            <SkillTech
-                                :logo="devopsSkill.logo"
-                                :label="devopsSkill.label"
-                            />
-                        </div>
+                        <SkillTech
+                            v-for="devopsSkill in SKILLS.devops"
+                            :logo="devopsSkill.logo"
+                            :label="devopsSkill.label"
+                        />
                     </div>
                 </div>
-                <div class="bg-gray-900/80 backdrop-blur-3xl rounded-2xl p-4 w-full">
+                <div class="bg-gray-900/20 backdrop-blur-3xl rounded-2xl p-4 w-full border-[0.5px] border-white/20 shadow-2xl">
                     <span class="text-3xl font-semibold text-white">
                         Other
                     </span>
                     <div class="flex flex-row flex-wrap gap-4 mt-4">
-                        <div v-for="otherSkill in SKILLS.other">
-                            <SkillTech
-                                :logo="otherSkill.logo"
-                                :label="otherSkill.label"
-                            />
-                        </div>
+                        <SkillTech
+                            v-for="otherSkill in SKILLS.other"
+                            :logo="otherSkill.logo"
+                            :label="otherSkill.label"
+                        />
                     </div>
                 </div>
             </div>

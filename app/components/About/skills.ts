@@ -56,6 +56,10 @@ export const SKILLS = {
             label: "Node.js"
         },
         {
+            logo: "/About/Skills/Backend/express.svg",
+            label: "Express"
+        },
+        {
             logo: "/About/Skills/Backend/python.svg",
             label: "Python"
         },
@@ -165,5 +169,9 @@ export const SKILLS = {
             logo: "/About/Skills/Other/termius.svg",
             label: "Termius"
         },
+        {
+            logo: "/About/Skills/Other/figma.svg",
+            label: "Figma"
+        }
     ]
 }

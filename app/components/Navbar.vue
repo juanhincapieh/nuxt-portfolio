@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center top-[2em] left-0 right-0 z-20 fixed max-w-7xl mx-auto h-15 justify-center">
+    <div class="flex items-center top-[2em] left-0 right-0 z-20 fixed max-w-7xl mx-auto h-17 justify-center">
         <div class="flex justify-between items-center bg-[rgba(0,0,0,0.05)] backdrop-filter backdrop-blur-[10px] my-0 px-6 py-4 border border-[rgba(255,255,255,0.2)] rounded-[50px] w-[93%] h-full" style="backdrop-filter: blur(10px); box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 30px;">
             <h1 class="text-white text-xl font-semibold">juanhincapieh</h1>
             <div class="flex align-middle items-center space-x-8">

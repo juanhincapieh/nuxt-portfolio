@@ -1,6 +1,6 @@
 <template>
-    <div class="relative">
-        <div class="relative flex flex-col gap-16 max-w-7xl mx-auto mt-14 w-full z-10">
+    <div class="flex relative align-middle items-center min-h-dvh overflow-hidden scrollbar-hide">
+        <div class="relative flex flex-col gap-16 max-w-7xl mx-auto w-full z-10 align-middle mt-15">
             <Hero />
         </div>
     </div>
