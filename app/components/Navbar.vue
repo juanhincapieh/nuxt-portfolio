@@ -64,6 +64,6 @@ import {
 const route = useRoute();
 
 const handleCVDownload = (): void => {
-    window.open("/files/cv.pdf")
+    window.open("/Files/cv.pdf")
 }
 </script>
