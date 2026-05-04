@@ -45,6 +45,10 @@ export const SKILLS = {
             label: "Astro"
         },
         {
+            logo: "/About/Skills/Frontend/dart.svg",
+            label: "Dart"
+        },
+        {
             logo: "/About/Skills/Frontend/flutter.svg",
             label: "Flutter"
         },
@@ -98,7 +102,7 @@ export const SKILLS = {
         {
             logo: "/About/Skills/Backend/rabbitmq.svg",
             label: "RabbitMQ"
-        }
+        },
     ],
 
     devops: [
