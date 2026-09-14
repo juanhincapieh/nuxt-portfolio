@@ -1,12 +1,24 @@
 export const EXPERIENCE = [
     {
+        company: "Globant",
+        roles: [
+            {
+                role: "Web UI Developer",
+                location: "Medellín, Colombia",
+                startDate: "Sep. 2026",
+                endDate: "Present",
+                description: ""
+            }
+        ]
+    },
+    {
         company: "Unergy",
         roles: [
             {
                 role: "Software Developer",
                 location: "Medellín, Colombia",
                 startDate: "Feb. 2026",
-                endDate: "Present",
+                endDate: "Sep. 2026",
                 description: 'Versatile Full Stack Developer & DevOps Specialist experienced in architecting scalable APIs with Django and Express, alongside modern frontends in Nuxt 4. I bridge the gap between code and infrastructure by automating CI/CD pipelines, managing GCP/on-premise networks, and ensuring high availability through Docker and NGINX for robust, production-ready applications.'
             },
             {
