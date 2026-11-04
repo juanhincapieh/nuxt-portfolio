@@ -37,7 +37,8 @@ app/
 │   ├── profile.ts       name, roles (typing effect), tagline, careerStart, portrait, socials, cvUrl
 │   ├── experience.ts    companies → roles, newest first; endDate 'Present' = current role
 │   ├── skills.ts        frontend/backend/devops/other; each skill has logo + label + color
-│   └── navigation.ts    navbar links
+│   ├── navigation.ts    navbar links
+│   └── home.ts          copy for home page sections (Experience title, intro, link)
 ├── types/         Types for the data (explicit `import type`)
 ├── utils/         Auto-imported plain functions (getCurrentRole, getProfileStats, getRoleEntries, getSkill)
 ├── composables/   Auto-imported Vue composables (useWindowScrolled, useMediaQuery, useScrollLock)
