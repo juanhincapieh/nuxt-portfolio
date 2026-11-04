@@ -4,6 +4,59 @@
 
 @theme {
     --font-sans: 'Lato', sans-serif;
+
+    /* Brand colors → bg-accent, text-muted, text-on-accent, ... */
+    --color-accent: #c8abff;
+    --color-accent-hover: #ad93dc;
+    --color-on-accent: #2b2a2c;
+    --color-muted: #959595;
+
+    @keyframes fade-up {
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: scale(0.96);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+/*
+ * Animations → motion-safe:animate-fade-up, ...
+ * `inline` makes the utilities resolve --animation-delay on the element itself,
+ * so `animation-delay-*` below can stagger them.
+ */
+@theme inline {
+    --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--animation-delay, 0ms) both;
+    --animate-fade-in: fade-in 1s cubic-bezier(0.22, 1, 0.36, 1) var(--animation-delay, 0ms) both;
+    --animate-float: float 6s ease-in-out infinite;
+}
+
+/* Stagger: animation-delay-200 → starts 200ms later */
+@utility animation-delay-* {
+    --animation-delay: calc(--value(integer) * 1ms);
 }
 
 @layer base {

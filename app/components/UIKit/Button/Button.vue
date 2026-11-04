@@ -1,71 +1,56 @@
 <template>
-    <button
+    <component
+        :is="to ? NuxtLink : 'button'"
+        :to="to"
+        :type="to ? undefined : type"
         :class="[
-            'flex items-center gap-2 justify-center transition-all duration-200 focus:outline-none hover:cursor-pointer',
-            sizeClass,
-            variantClass,
-            customClass
+            'flex items-center gap-2 justify-center transition-colors duration-200 hover:cursor-pointer',
+            'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent',
+            SIZE_CLASSES[size],
+            VARIANT_CLASSES[variant],
         ]"
-        @click="$emit('click', $event)"
     >
         <span v-if="$slots.default">
             <slot />
         </span>
         <component
-            v-if="props.icon && props.icon !== 'none'"
-            :is="props.icon"
-            :class="iconSizeClass"
+            :is="icon"
+            v-if="icon"
+            :class="ICON_SIZE_CLASSES[size]"
+            aria-hidden="true"
         />
-    </button>
+    </component>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-import type { ButtonProps } from './types';
+import type { ButtonProps, ButtonSize, ButtonVariant } from './types';
 
-const props = withDefaults(defineProps<ButtonProps>(), {
+withDefaults(defineProps<ButtonProps>(), {
     size: 'md',
     variant: 'default',
     icon: null,
-    class: '',
+    to: undefined,
+    type: 'button',
 });
 
-const emit = defineEmits(['click'])
+const NuxtLink = resolveComponent('NuxtLink');
 
-const iconSizeClass = computed(() => {
-    switch (props.size) {
-        case 'sm':
-            return 'w-3 h-3'
-        case 'md':
-            return 'w-5 h-5'
-        case 'lg':
-            return 'w-7 h-7'
-        default:
-            return 'w-7 h-7'
-    }
-})
+const SIZE_CLASSES: Record<ButtonSize, string> = {
+    sm: 'py-1 px-3 rounded-lg text-sm',
+    md: 'min-w-[118px] h-8 px-3 py-5 text-base font-normal rounded-lg whitespace-nowrap',
+    lg: 'px-7 py-4 text-xl rounded-lg',
+};
 
-const sizeClass = computed(() => {
-    switch (props.size) {
-        case 'sm':
-            return 'py-1 px-3 rounded-lg text-sm'
-        case 'md':
-            return 'min-w-[118px] h-8 px-3 py-5 text-md font-normal rounded-lg whitespace-nowrap'
-        case 'lg':
-            return 'px-7 py-4 text-xl rounded-lg'
-        default:
-            return 'min-w-[118px] h-8 px-3 py-4 text-sm font-normal rounded-lg whitespace-nowrap'
-    }
-})
+const ICON_SIZE_CLASSES: Record<ButtonSize, string> = {
+    sm: 'size-3',
+    md: 'size-5',
+    lg: 'size-7',
+};
 
-const variantClass = computed(() => {
-    switch (props.variant) {
-        case 'outline':
-            return 'border-[0.5px] border-gray-300 bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors'
-        default:
-            return 'bg-black text-white hover:bg-gray-900 hover:text-white transition-colors'
-    }
-})
-
-const customClass = computed(() => props.class || '')
+const VARIANT_CLASSES: Record<ButtonVariant, string> = {
+    default: 'bg-black text-white hover:bg-gray-900',
+    outline: 'border-[0.5px] border-gray-300 bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900',
+    accent: 'bg-accent font-semibold text-on-accent hover:bg-accent-hover',
+    ghost: 'border border-white/20 bg-white/5 text-white backdrop-blur hover:border-white/40 hover:bg-white/10',
+};
 </script>

@@ -1,4 +1,6 @@
-export const SKILLS = {
+import type { SkillGroups } from '~/types/skill'
+
+export const SKILLS: SkillGroups = {
     frontend: [
         {
             logo: "/About/Skills/Frontend/html.svg",

@@ -1,11 +1,19 @@
 <template>
-    <div class="flex relative align-middle items-center min-h-dvh overflow-hidden scrollbar-hide">
-        <div class="relative flex flex-col gap-16 max-w-7xl mx-auto w-full z-10 align-middle mt-15">
-            <Hero />
-        </div>
+    <div class="flex min-h-dvh items-center pt-32 pb-16 lg:pt-28">
+        <Hero class="w-full" />
     </div>
 </template>
 
 <script setup lang="ts">
-import Hero from '@/components/Hero/Hero.vue';
+import { PROFILE } from '~/data/profile';
+
+const title = `${PROFILE.name} | ${PROFILE.roles[0]}`;
+
+useSeoMeta({
+    title,
+    description: PROFILE.tagline,
+    ogTitle: title,
+    ogDescription: PROFILE.tagline,
+    ogImage: PROFILE.portrait.src,
+});
 </script>

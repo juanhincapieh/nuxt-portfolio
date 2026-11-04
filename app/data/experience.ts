@@ -1,4 +1,6 @@
-export const EXPERIENCE = [
+import type { Experience } from '~/types/experience'
+
+export const EXPERIENCE: Experience[] = [
     {
         company: "Globant",
         roles: [

@@ -33,18 +33,7 @@
 // UIKit
 import { Badge } from '@/components/UIKit/Badge';
 
-export interface ExperienceItemProps {
-    company: string
-    roles: Role[]
-}
+import type { Experience } from '~/types/experience';
 
-export interface Role {
-    role: string
-    location: string
-    startDate: string
-    endDate: string
-    description: string
-}
-
-const props = defineProps<ExperienceItemProps>()
+const props = defineProps<Experience>()
 </script>
