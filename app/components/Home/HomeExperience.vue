@@ -13,14 +13,15 @@
             </NuxtLink>
         </header>
 
-        <ol class="flex flex-col divide-y divide-white/10 rounded-2xl border border-white/10 bg-white/2 backdrop-blur">
+        <ol class="flex flex-col divide-y divide-white/10 rounded-2xl border border-white/10 bg-white/2">
             <HomeExperienceRow
                 v-for="entry in entries"
                 :key="`${entry.company}-${entry.role}`"
-                :company="entry.company"
-                :role="entry.role"
                 :start-date="entry.startDate"
                 :end-date="entry.endDate"
+                :role="entry.role"
+                :company="entry.company"
+                :description="entry.description"
                 :technologies="entry.technologies"
             />
         </ol>
