@@ -1,19 +1,8 @@
 <template>
     <span
-        :class="[
-            'inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 py-1 pr-3 text-xs font-medium text-white/80',
-            logo ? 'pl-1.5' : 'pl-3',
-        ]"
+        :style="{ '--chip-color': color }"
+        class="inline-flex items-center rounded-xl border border-(--chip-color)/20 bg-(--chip-color)/10 px-3 py-1 font-mono text-xs font-bold text-white/80"
     >
-        <img
-            v-if="logo"
-            :src="logo"
-            alt=""
-            width="16"
-            height="16"
-            loading="lazy"
-            class="size-4 object-contain"
-        >
         {{ label }}
     </span>
 </template>
@@ -21,5 +10,7 @@
 <script setup lang="ts">
 import type { TechChipProps } from './types';
 
-defineProps<TechChipProps>();
+withDefaults(defineProps<TechChipProps>(), {
+    color: 'var(--color-neutral-300)',
+});
 </script>

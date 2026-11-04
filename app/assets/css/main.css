@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import "tailwindcss";
 
 
 @theme {
     --font-sans: 'Lato', sans-serif;
+    /* → font-mono (tech chips, code-like labels) */
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
     /* Brand colors → bg-accent, text-muted, text-on-accent, ... */
     --color-accent: #c8abff;
@@ -46,6 +48,17 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/*
+ * full-bleed → spans the whole viewport width from inside the max-w-7xl layout.
+ * (app.vue clips the horizontal overflow this causes when a scrollbar is shown.)
+ */
+@utility full-bleed {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    translate: -50% 0;
 }
 
 /* Stagger: animation-delay-200 → starts 200ms later */

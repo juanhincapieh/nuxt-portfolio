@@ -1,5 +1,6 @@
 <template>
-  <div class="min-h-screen bg-neutral-950">
+  <!-- overflow-x-clip: lets full-width sections (100vw) break out without a horizontal scrollbar. -->
+  <div class="min-h-screen overflow-x-clip bg-neutral-950">
     <!-- Smooth scrolling for the whole page (off when the user prefers reduced motion). -->
     <VueLenis root :options="LENIS_OPTIONS" />
 

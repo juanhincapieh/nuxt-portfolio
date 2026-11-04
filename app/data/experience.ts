@@ -9,7 +9,7 @@ export const EXPERIENCE: Experience[] = [
                 location: "Medellín, Colombia",
                 startDate: "Sep. 2026",
                 endDate: "Present",
-                technologies: ["Nuxt", "Django", "AWS"],
+                technologies: ["Vue", "TypeScript", "DotNet"],
                 description: ""
             }
         ]
@@ -18,11 +18,11 @@ export const EXPERIENCE: Experience[] = [
         company: "Unergy",
         roles: [
             {
-                role: "Software Developer",
+                role: "Lead Software Developer",
                 location: "Medellín, Colombia",
                 startDate: "Feb. 2026",
                 endDate: "Sep. 2026",
-                technologies: ["Nuxt", "Django", "AWS"],
+                technologies: ["Nuxt", "Svelte", "Django", "PostgreSQL", "Docker", "AWS", "GCP"],
                 description: 'Versatile Full Stack Developer & DevOps Specialist experienced in architecting scalable APIs with Django and Express, alongside modern frontends in Nuxt 4. I bridge the gap between code and infrastructure by automating CI/CD pipelines, managing GCP/on-premise networks, and ensuring high availability through Docker and NGINX for robust, production-ready applications.'
             },
             {

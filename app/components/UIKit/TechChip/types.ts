@@ -1,5 +1,5 @@
 export interface TechChipProps {
     label: string;
-    /** Path to the technology logo. Without it, the chip shows text only. */
-    logo?: string;
+    /** Any CSS color. Without it, the chip is neutral gray. */
+    color?: string;
 }
