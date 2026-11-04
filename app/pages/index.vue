@@ -1,6 +1,10 @@
 <template>
-    <div class="flex min-h-dvh items-center pt-32 pb-16 lg:pt-28">
-        <Hero class="w-full" />
+    <div class="flex flex-col gap-16 pb-24">
+        <div class="flex min-h-dvh items-center pt-32 pb-16 lg:pt-28">
+            <Hero class="w-full" />
+        </div>
+
+        <HomeExperience />
     </div>
 </template>
 

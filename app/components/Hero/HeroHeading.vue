@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col gap-2">
         <p class="text-lg text-muted sm:text-xl">Hi, I'm</p>
-        <h1 class="bg-linear-to-br from-white via-white to-accent bg-clip-text pb-2 text-5xl leading-[1.05] font-extrabold tracking-tight text-transparent sm:text-6xl lg:text-7xl xl:text-8xl">
+        <h1 class="text-5xl leading-[1.05] font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl xl:text-8xl">
             {{ name }}
         </h1>
         <p class="text-2xl font-semibold sm:text-3xl lg:text-4xl">
