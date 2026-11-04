@@ -1,17 +1,10 @@
 <template>
-  <div class="relative min-h-screen bg-neutral-950">
-    <div class="fixed inset-0 z-0 opacity-50">
-        <DarkVeil
-            :hue-shift="0"
-            :noise-intensity="0"
-            :scanline-intensity="0"
-            :speed="2"
-            :scanline-frequency="0"
-            :warp-amount="0"
-            :resolution-scale="1"
-        />
-    </div>
-    <div class="relative z-10 flex flex-col max-w-7xl mx-auto w-full px-6 md:px-12">
+  <!-- overflow-x-clip: lets full-width sections (100vw) break out without a horizontal scrollbar. -->
+  <div class="min-h-screen overflow-x-clip bg-neutral-950">
+    <!-- Smooth scrolling for the whole page (off when the user prefers reduced motion). -->
+    <VueLenis root :options="LENIS_OPTIONS" />
+
+    <div class="flex flex-col max-w-7xl mx-auto w-full px-6 md:px-12">
         <Navbar />
         <NuxtRouteAnnouncer />
         <NuxtPage/>
@@ -20,9 +13,13 @@
 </template>
 
 <script setup lang="ts">
-// UIKit
-import Navbar from '@/components/Navbar.vue';
+import type { LenisOptions } from 'lenis';
 
-// VueBits
-import DarkVeil from '@/components/VueBits/Backgrounds/DarkVeil.vue';
+// Defined once so <VueLenis> is not re-created on re-render.
+const LENIS_OPTIONS: LenisOptions = {
+    // Smooth-scroll #anchor links (respects CSS scroll-margin).
+    anchors: true,
+    // Stop the glide when a link navigates to another page.
+    stopInertiaOnNavigate: true,
+};
 </script>
