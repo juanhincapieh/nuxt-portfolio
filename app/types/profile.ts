@@ -20,6 +20,8 @@ export interface Profile {
     careerStart: string
     portrait: Portrait
     socials: Social[]
+    /** Public path to the CV file (under /public). */
+    cvUrl: string
 }
 
 export interface ProfileStat {

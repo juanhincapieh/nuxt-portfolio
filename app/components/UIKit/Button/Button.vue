@@ -6,6 +6,7 @@
         :class="[
             'flex items-center gap-2 justify-center transition-colors duration-200 hover:cursor-pointer',
             'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent',
+            '[&_svg]:transition-transform [&_svg]:duration-200',
             SIZE_CLASSES[size],
             VARIANT_CLASSES[variant],
         ]"
@@ -38,13 +39,14 @@ const NuxtLink = resolveComponent('NuxtLink');
 const SIZE_CLASSES: Record<ButtonSize, string> = {
     sm: 'py-1 px-3 rounded-lg text-sm',
     md: 'min-w-[118px] h-8 px-3 py-5 text-base font-normal rounded-lg whitespace-nowrap',
-    lg: 'px-7 py-4 text-xl rounded-lg',
+    // 48px tall: lines up with the round social icons.
+    lg: 'h-12 px-5 text-sm rounded-lg whitespace-nowrap',
 };
 
 const ICON_SIZE_CLASSES: Record<ButtonSize, string> = {
     sm: 'size-3',
     md: 'size-5',
-    lg: 'size-7',
+    lg: 'size-4',
 };
 
 const VARIANT_CLASSES: Record<ButtonVariant, string> = {

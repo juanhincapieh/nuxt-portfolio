@@ -18,4 +18,5 @@ export const PROFILE: Profile = {
         { platform: 'linkedin', label: 'LinkedIn', url: 'https://linkedin.com/in/juanhincapieh' },
         { platform: 'instagram', label: 'Instagram', url: 'https://instagram.com/juanhincapieh' },
     ],
+    cvUrl: '/Files/cv.pdf',
 }

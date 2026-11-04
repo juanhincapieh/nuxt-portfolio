@@ -1,12 +1,21 @@
 <template>
-    <p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-sm text-white/80 backdrop-blur">
-        <span class="size-2 rounded-full bg-emerald-400" aria-hidden="true" />
-        <span>
-            Currently {{ role }}
-            <span class="text-white/50">@</span>
-            <span class="font-semibold text-white">{{ company }}</span>
-        </span>
-    </p>
+    <div class="font-mono text-sm leading-relaxed">
+        <!-- Screen readers get a plain sentence instead of the prompt symbols -->
+        <p class="sr-only">Currently {{ role }} at {{ company }}</p>
+
+        <div aria-hidden="true">
+            <p class="text-white/40">
+                <span class="text-emerald-400">$</span> status --current
+            </p>
+            <p class="text-white/80">
+                <span class="text-white/40">&gt;</span>
+                {{ role }}
+                <span class="text-white/40">@</span>
+                <span class="text-accent">{{ company }}</span>
+                <span class="ml-1 inline-block h-[1.1em] w-[0.55em] translate-y-[0.2em] bg-white/70 motion-safe:animate-blink" />
+            </p>
+        </div>
+    </div>
 </template>
 
 <script setup lang="ts">

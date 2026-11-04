@@ -22,6 +22,14 @@
 @theme inline {
     --animate-fade-up: fade-up 0.5s ease-out var(--animation-delay, 0ms) both;
     --animate-scroll-dot: scroll-dot 1.8s ease-in-out infinite;
+    --animate-blink: blink 1.1s step-end infinite;
+}
+
+/* Terminal-style cursor: on half the time, off the other half. */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
 
 /* The dot inside the scroll hint's mouse icon: slides down and fades out. */

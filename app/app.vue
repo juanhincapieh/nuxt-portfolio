@@ -15,9 +15,6 @@
 <script setup lang="ts">
 import type { LenisOptions } from 'lenis';
 
-// UIKit
-import Navbar from '@/components/Navbar.vue';
-
 // Defined once so <VueLenis> is not re-created on re-render.
 const LENIS_OPTIONS: LenisOptions = {
     // Smooth-scroll #anchor links (respects CSS scroll-margin).
