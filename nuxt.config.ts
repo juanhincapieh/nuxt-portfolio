@@ -13,5 +13,14 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss(),
     ],
+    // Pre-bundle deps Vite otherwise discovers at runtime (avoids a dev page reload).
+    optimizeDeps: {
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+        '@lucide/vue',
+        'gsap',
+      ],
+    },
   },
 })
