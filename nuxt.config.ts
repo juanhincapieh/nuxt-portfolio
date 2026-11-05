@@ -24,6 +24,7 @@ export default defineNuxtConfig({
         'gsap',
         'lenis',
         'lenis/vue',
+        'ogl',
       ],
     },
   },

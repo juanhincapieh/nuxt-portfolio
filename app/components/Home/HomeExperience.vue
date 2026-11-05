@@ -11,13 +11,6 @@
             <p class="max-w-sm text-muted">
                 {{ HOME_EXPERIENCE.intro }}
             </p>
-            <NuxtLink
-                :to="HOME_EXPERIENCE.link.to"
-                class="group inline-flex w-fit items-center gap-1 font-mono text-sm text-muted transition-colors hover:text-white"
-            >
-                {{ HOME_EXPERIENCE.link.label }}
-                <ArrowRight class="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
-            </NuxtLink>
         </header>
 
         <!-- Right: one entry per role (gap-10 leaves room for the divider in HomeExperienceRow) -->
@@ -38,9 +31,6 @@
 
 <script setup lang="ts">
 import { HOME_EXPERIENCE } from '~/data/home';
-
-// Icons
-import { ArrowRight } from '@lucide/vue';
 
 const entries = getRoleEntries();
 </script>
