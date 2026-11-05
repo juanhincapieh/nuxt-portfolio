@@ -9,7 +9,7 @@
         :icon="FileUser"
         :class="'font-mono'"
     >
-        View CV
+        View Resume
     </Button>
 </template>
 

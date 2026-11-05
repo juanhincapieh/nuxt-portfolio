@@ -13,7 +13,7 @@
             :wave-color="COLORS.wave"
             :crest-color="COLORS.crest"
             :speed="0.1"
-            :opacity="0.2"
+            :opacity="0.4"
             :mouse-interaction="false"
             :grain-intensity="0.03"
             :wave-ratio="2"
