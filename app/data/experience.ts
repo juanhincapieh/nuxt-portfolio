@@ -9,8 +9,8 @@ export const EXPERIENCE: Experience[] = [
                 location: "Medellín, Colombia",
                 startDate: "Sep. 2026",
                 endDate: "Present",
-                technologies: ["Vue", "TypeScript", "DotNet"],
-                description: ""
+                technologies: ["Vue", "TypeScript", "Tailwind", "DotNet"],
+                description: 'Web UI Developer on a customer management platform, building and maintaining features across both Vue 2 and Vue 3 codebases. I craft responsive, reusable interfaces with Tailwind CSS and TypeScript, integrating them with .NET services to deliver reliable workflows for managing client data and relationships.'
             }
         ]
     },
@@ -30,8 +30,8 @@ export const EXPERIENCE: Experience[] = [
                 location: "Medellín, Colombia",
                 startDate: "Oct. 2025",
                 endDate: "Feb. 2026",
-                technologies: ["Nuxt", "Django", "AWS"],
-                description: 'Full Stack Developer & Infrastructure Lead with a focus on high-performance systems. I architected custom Flutter mobile apps and scalable Vue 3/Nuxt platforms, while simultaneously leading a strategic overhaul of network infrastructure and DevOps pipelines across AWS/GCP to maximize team efficiency and system reliability.'
+                technologies: ["Nuxt", "Flutter", "GCP"],
+                description: 'Frontend Developer & Infrastructure Lead with a focus on high-performance systems. I architected custom Flutter mobile apps and scalable Vue 3/Nuxt platforms, while simultaneously leading a strategic overhaul of network infrastructure and DevOps pipelines across AWS/GCP to maximize team efficiency and system reliability.'
             }
         ]
     },
@@ -43,7 +43,7 @@ export const EXPERIENCE: Experience[] = [
                 location: "Medellín, Colombia",
                 startDate: "Aug. 2025",
                 endDate: "Dec. 2025",
-                technologies: ["Nuxt", "Django", "AWS"],
+                technologies: ["Notion", "Vercel", "Firebase", "Figma", "Miro"],
                 description: 'Mentored student teams through the full software development lifecycle, leading workshops on UML modeling and requirements elicitation. I specialized in bridging academic projects with industry standards by guiding the practical application of SCRUM and ensuring high-quality software analysis and deliverables.'
             },
             {
@@ -51,7 +51,7 @@ export const EXPERIENCE: Experience[] = [
                 location: "Medellín, Colombia",
                 startDate: "Sep. 2024",
                 endDate: "Jul. 2025",
-                technologies: ["Nuxt", "Django", "AWS"],
+                technologies: ["Svelte", "Node.js", "Firebase"],
                 description: "Led the end-to-end development of a university web platform, ensuring seamless frontend-backend integration with Svelte and Apps Script. As Scrum Master, I optimized delivery timelines through agile methodologies and established a robust technical foundation using detailed UML design and consistent software requirements."
             }
         ]

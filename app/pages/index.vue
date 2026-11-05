@@ -1,6 +1,8 @@
 <template>
     <div class="flex flex-col">
-        <div class="relative flex min-h-dvh items-center pt-32 pb-24 lg:pt-28">
+        <!-- isolate: keeps HeroBackground's -z-10 above the page background -->
+        <div class="relative isolate flex min-h-dvh items-center pt-32 pb-24 lg:pt-28">
+            <HeroBackground />
             <Hero class="w-full" />
 
             <!-- Mouse hint only makes sense with a mouse; hidden on touch screens. -->

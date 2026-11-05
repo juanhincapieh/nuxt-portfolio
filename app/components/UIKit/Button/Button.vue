@@ -38,14 +38,14 @@ const NuxtLink = resolveComponent('NuxtLink');
 
 const SIZE_CLASSES: Record<ButtonSize, string> = {
     sm: 'py-1 px-3 rounded-lg text-sm',
-    md: 'min-w-[118px] h-8 px-3 py-5 text-base font-normal rounded-lg whitespace-nowrap',
+    md: 'min-w-[118px] h-8 px-3 py-5 text-sm font-normal rounded-lg whitespace-nowrap',
     // 48px tall: lines up with the round social icons.
     lg: 'h-12 px-5 text-sm rounded-lg whitespace-nowrap',
 };
 
 const ICON_SIZE_CLASSES: Record<ButtonSize, string> = {
     sm: 'size-3',
-    md: 'size-5',
+    md: 'size-4',
     lg: 'size-4',
 };
 
