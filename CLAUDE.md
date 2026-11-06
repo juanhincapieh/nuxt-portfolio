@@ -38,7 +38,8 @@ app/
 │   ├── experience.ts    companies → roles, newest first; endDate 'Present' = current role
 │   ├── skills.ts        frontend/backend/devops/other; each skill has logo + label + color
 │   ├── navigation.ts    navbar links
-│   └── home.ts          copy for home page sections (Experience title, intro, link)
+│   ├── home.ts          copy for home page sections (Experience title, intro, link)
+│   └── about.ts         About intro: title, paragraphs (draft, owner rewrites), 3:4 photo + fallback
 ├── types/         Types for the data (explicit `import type`)
 ├── utils/         Auto-imported plain functions (getCurrentRole, getProfileStats, getRoleEntries, getSkill)
 ├── composables/   Auto-imported Vue composables (useWindowScrolled, useMediaQuery, useScrollLock)
@@ -46,7 +47,7 @@ app/
 │   ├── Hero/        Hero.vue reads data; HeroStatus, HeroHeading, HeroActions, HeroPortrait take props
 │   ├── Home/        Home page sections (HomeExperience, HomeExperienceRow)
 │   ├── Navbar/      Navbar + Links, Toggle, MobileMenu, CvButton
-│   ├── About/       About page (Experience timeline, Skills grid)
+│   ├── About/       About page (AboutIntro + AboutPhoto, Experience timeline, Skills grid)
 │   ├── Social/      SocialLinks
 │   ├── UIKit/       Design system: Button, Badge, BrandIcon, TechChip, ScrollHint, Slide
 │   └── VueBits/     Third-party (TextType typing effect)
@@ -117,6 +118,7 @@ Always prefix animations with `motion-safe:`.
 ## Known open items
 
 - `public/Files/cv.pdf` doesn't exist yet, so the "View CV" link 404s (`cvUrl` in `data/profile.ts`).
+- `public/About/juan.webp` (3:4 About photo) doesn't exist yet; `AboutPhoto` falls back to the Hero photo until it's added.
 - `pages/projects.vue` and `pages/contact.vue` are empty.
 - `HeroStats.vue` and `stats` in `Hero.vue` are unused (stats row was removed); `ScrollHint`'s `label` prop is unused.
 - `README.md` is the Nuxt starter text.
